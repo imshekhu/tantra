@@ -1,0 +1,17 @@
+:root { --bg: #0b0e1d; --panel: #151a30; --text: #e6e9f3; --muted: #9ea4bf; --gold: #e8c27a; --line: #262b46; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", sans-serif; padding-inline: 20px; }
+main { max-width: 680px; margin: 0 auto; padding-block: 56px 72px; }
+nav { display: flex; gap: 20px; flex-wrap: wrap; font-size: 15px; margin-bottom: 48px; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:first-child { color: var(--text); font-weight: 700; margin-right: auto; }
+a { color: var(--gold); }
+h1 { font-size: clamp(34px, 7vw, 48px); line-height: 1.1; margin: 0 0 16px; text-wrap: balance; }
+h2 { font-size: 21px; margin: 36px 0 8px; }
+p, li { color: var(--muted); }
+.lead { font-size: 20px; color: var(--text); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-top: 28px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px; }
+.card b { color: var(--text); display: block; margin-bottom: 4px; }
+.cta { display: inline-block; margin-top: 28px; padding: 14px 22px; border-radius: 14px; background: var(--gold); color: #0b0e1d; font-weight: 700; text-decoration: none; }
+footer { margin-top: 64px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 20px; }
